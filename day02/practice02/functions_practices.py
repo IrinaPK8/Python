@@ -74,5 +74,5 @@ def palindrome_string (word = ''):
         return False
 
 print(palindrome_string('Anna'))
-#
+##
 
