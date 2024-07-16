@@ -51,7 +51,7 @@ print(tuple_reversed2)              # (False, True, 5, 4, 3, 2, 1, 'Sun', 'Sat',
 print(days1.index('Wed'))            # 2
 
 # count(): returns frequency of a specified element from tuple
-nums = 10, 20, 30, 40, 50, 60, 70, 10, 50, 10, 70, 60, 10, 10
+nums = 10, 20, 30, 40, 50, 60, 70, 10, 50, 10, 70, 60, 10, 10, 20
 print(nums.count(10))               # 5
 
 # ITERATE through tuple elements
