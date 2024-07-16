@@ -8,3 +8,15 @@ output:
 1 2 FIN 4 RA FIN 7 8 FIN RA 11 FIN 13 14 FINRA 16 17 FIN
 """
 
+def finra():
+    for i in range(1, 101):
+        if i % 3 == 0 and i % 5 == 0:
+            print('FINRA', end = ' ')
+        elif i % 3 == 0:
+            print('FIN', end = ' ')
+        elif i % 5 == 0:
+            print('RA', end = ' ')
+        else:
+            print(i, end = ' ')
+
+print(finra())

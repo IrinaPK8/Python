@@ -17,3 +17,29 @@ If "no" --> print "Thank you for using Cydeo Grade Calculator APP"
 If user enters an invalid entry, ask the user to re-enter until user provides a valid entry
 """
 
+def grade_calculator(score: int):
+    if score >=0 and score <=  100:
+        if score >= 90 and score <= 100:
+            return('A')
+        elif score >= 80 and score < 90:
+            return('B')
+        elif score >= 70 and score < 80:
+            return('C')
+        elif score >= 60 and score < 70:
+            return('D')
+        elif score < 59:
+            return('F')
+    else:
+        return('Invalid Entry')
+
+print(grade_calculator(89))
+
+def cont (question: str):
+    if question.islower() == 'Yes':
+        return (grade_calculator())     #### ?????????????????????????
+    elif question.islower() == 'No':
+        return ('Thank you for using Cydeo Grade Calculator APP')
+    else:
+        return ('Invalid input')
+
+print(cont('No'))

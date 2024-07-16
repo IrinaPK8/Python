@@ -76,3 +76,10 @@ def palindrome_string (word = ''):
 print(palindrome_string('Anna'))
 ##
 
+#3.1 Write a program that can return the sum of even numbers between 1 to 100
+def even_numbers():
+    summ = 0
+    for i in range(1, 101):
+        if i % 2 == 0:
+            summ += i
+    print(even_numbers())

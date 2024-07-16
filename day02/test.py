@@ -3,7 +3,7 @@
 # import utility > result = utility.sum / utility.concat / utility.calculate
 # to import module from different package > import day01.utility
 
-# 'from' keyword allows us to import only parts of python files properties
+# 'FROM' keyword allows us to import only parts of python files properties
 from utility import sum, calculate
 
 result = sum(10, 20)
@@ -20,7 +20,7 @@ utility.sum(10, 20)
 utility.calculate(10, 30, '*')
 
 print('---------------------------------------')
-# 'as' keyword to define alias name
+# 'AS' keyword to define alias name
 import utility as u
 
 u.concat('Java', 'Python')

@@ -13,12 +13,10 @@ Python methods:
 """
 import numbers
 
-
-## VOID FUNCTION
+# VOID FUNCTION
 def display_message():
-    print('Hello Cydeo')
-    print('Hello World')
-
+    print('Hello Cydeo')                # Hello Cydeo
+    print('Hello World')                # Hello World
 display_message()       # calling function
 
 
@@ -27,51 +25,45 @@ display_message()       # calling function
 # if it's return function, you are able to assign it to variable or call it in print() statement   !!!!!!!!!!
 def value():
     return 'Python Programming'
-
-print(value())
+print(value())                          # Python Programming
 
 
 # CAN MAKE IT MANDATORY TO RETURN A VALUE - GENERIC FUNCTION - user arrow token -> returnType:
 def return_int() -> int:
     return 8
+print(return_int())                     # 8
 
-print(return_int())
 
 # FUNCTION WITH PARAMETERS - in order to provide additional info to pass the test
 def square(num: int):               # it's better to specify/restrict which type only to take as argument 'parameter: type'
     return num * num                # if other var type is used - getting warning since Python uses Interpreter instead of Compiler
-
-print(square(10))
+print(square(10))                       # 100
 
 
 def divide(num1, num2):
     return num1 / num2
-
-print (divide(48, 6))
+print (divide(48, 6))       # 8.0
 
 
 def compare(str1, str2):                # can take any arguments
     return str1 == str2
-
 print(compare('java', 'java'))      # True
 
 
 def concatenate(num):
     return num + num
-
 print(concatenate('Java'))              # JavaJava
 
 
 # if not sure what type of number variable to accept > import numbers (at very top of function)
-# it will return a type of a given arguments
+# it will return type of given arguments
 def add(num1: numbers, num2: numbers):
     return num1 + num2
-
 print (add(5.5, 6.0))       #11.5
 print(add(12, 8))           #20
 
 
-print('-------------------------------------------')
+print('-------------CALCULATOR----------------')
 def calculate(num1: numbers, num2: numbers, operator: str) -> numbers:
     if operator == '-':
         return num1 - num2
@@ -84,7 +76,6 @@ def calculate(num1: numbers, num2: numbers, operator: str) -> numbers:
     else:
         print('Invalid operator')
         return 0
-
 print(calculate(10, 5, '+'))
 print(calculate(10, 5, '-'))
 print(calculate(10, 5, '*'))
@@ -103,12 +94,11 @@ print(sum(10, 20))                      #30
 print(sum(10, 20, 30))              #60
 print(sum(10, 20, 30, 40))      #100
 
-print('-------------------------------------------')
+print('---------CONCAT STR WITH OTHER DATA-----------')
 # create concatenate function - str with any other datas (up to five data)
 # set other values to default - empty String in this case
 def concat (a: str, b, c = '', d = '', e = ''):
     print(f'{a} {b} {c} {d} {e}'.strip())       # add .strip() method to remove spaces if necessary
-
 concat('Cydeo', 'school')                           # Cydeo school
 concat('Python', 3, 2.5)                         # Python 3 2.5
 concat('Python', 3, '2.5', True, False)    # Python 3 2.5 True False
